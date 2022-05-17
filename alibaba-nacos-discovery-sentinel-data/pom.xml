@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>alibaba-nacos-config-client</artifactId>
+  <artifactId>alibaba-nacos-discovery-sentinel-data</artifactId>
 
   <dependencies>
     <dependency>
@@ -18,16 +18,18 @@
     </dependency>
     <dependency>
       <groupId>com.alibaba.cloud</groupId>
-      <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-      <version>2.2.0.RELEASE</version>
-      <type>pom</type>
+      <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+    </dependency>
+     <dependency>
+      <groupId>com.alibaba.csp</groupId>
+      <artifactId>sentinel-datasource-nacos</artifactId>
+      <version>1.5.2</version>
     </dependency>
 
+
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.2</version>
-      <optional>true</optional>
+      <groupId>com.alibaba.csp</groupId>
+      <artifactId>sentinel-core</artifactId>
     </dependency>
   </dependencies>
 </project>

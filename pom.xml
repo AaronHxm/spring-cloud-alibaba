@@ -13,6 +13,8 @@
     <module>alibaba-nacos-discovery-consumer</module>
     <module>alibaba-nacos-config-client</module>
     <module>alibaba-nacos-discovery-sentinel</module>
+    <module>alibaba-nacos-discovery-sentinel-data</module>
+    <module>alibaba-nacos-discovery-sentinel-annotation</module>
   </modules>
   <parent>
     <groupId>com.framework</groupId>

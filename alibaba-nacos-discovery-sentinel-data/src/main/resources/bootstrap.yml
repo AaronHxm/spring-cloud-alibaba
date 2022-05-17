@@ -1,0 +1,21 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: alibaba-sentinel-datasource-nacos
+  cloud:
+    sentinel:
+      datasource:
+        ds:
+          nacos:
+            serverAddr: 127.0.0.1:8848
+            dataId: ${spring.application.name}-sentinel
+            groupId: DEFAULT_GROUP
+            ruleType: flow
+      enabled: true
+      transport:
+        port: 8719
+        dashboard: 127.0.0.1:8080
+    nacos:
+      config:
+        enabled: false
