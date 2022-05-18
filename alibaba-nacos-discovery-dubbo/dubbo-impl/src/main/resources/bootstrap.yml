@@ -1,0 +1,33 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: alibaba-nacos-dubbo-server
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+#        ext‐config[0]:
+#          data‐id: common.yml
+#          group: DEFAULT_GROUP
+#          refresh: true
+#          namespace:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: #默认public
+
+#### 配置可以用下面这个  也可以使用 ext‐config中的common.yml
+dubbo:
+  protocol:
+    name: dubbo # dubbo 协议
+    port: -1 # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+  #  provider:
+#    timeout: 3000
+#    filter: providerFilter
+#  consumer:
+#    check: false
+#    filter: consumerFilter
+  registry:
+    address: nacos://127.0.0.1:8848
+    parameters:
+      namespace: #默认public
